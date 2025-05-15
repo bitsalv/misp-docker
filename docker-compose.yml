@@ -89,8 +89,8 @@ services:
       start_period: 30s
       start_interval: 30s
     ports:
-      - "82:82"
-      - "6443:6443"
+      - "82:80"
+      - "6443:443"
     volumes:
       - "./configs/:/var/www/MISP/app/Config/"
       - "./logs/:/var/www/MISP/app/tmp/logs/"
